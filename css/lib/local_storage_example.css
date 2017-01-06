@@ -1,3 +1,8 @@
+/*
+* These stlyes make use of Modernizr
+* check js/vendor/modernizr.min.js for a URL to the build
+*/
+
 .local_storage_example textarea{
 	width: 100%;
 }
