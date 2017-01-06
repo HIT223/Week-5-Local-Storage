@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="no-js">
     <head>
         <!-- Based on h5bp/html5-boilerplate [https://github.com/h5bp/html5-boilerplate] -->
         <meta charset="utf-8">
@@ -7,13 +7,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
+        <!-- Pollyfill addEventListener on IE8 -->
+        <!--[if IE 8]><script src="js/vendor/pollyfills/EventListener.js"></script><!--<![endif]-->
+        <!-- modernizr for feature detection -->
+        <script type="text/javascript" src="js/vendor/modernizr.min.js"></script>
     </head>
     <body>
         <div class="container card">
             <div class="card__heading">
                 <h1>HTML5 Local Storage</h1>
             </div>
-            <div class="row">
+            <div class="row local_storage_example">
                 <form class="columns six" name="addingText">
                     <label for="userInput">Data to insert</label>
                     <textarea name="userInput" id="userInput"></textarea>
@@ -22,6 +26,15 @@
                     <input type="button" id="reset" value="Reset">
                 </form>
                 <pre class="columns six" id="output"></pre>
+            </div>
+            <div class="row local_storage_example__no_support">
+                <h2>Outdated browser detected</h2>
+                <p>Sorry, it looks like your browser does not support localStorage</p>
+            </div>
+            <div class="row local_storage_example__no-js">
+                <h2>JavaScript disabled</h2>
+                <p>Sorry, it looks like your browser has JavaScript diabled.</p>
+                <p>JavaScript is nessesary for this feature to work</p>
             </div>
         </div>
         <script type="text/javascript" src="js/userInput.js"></script>

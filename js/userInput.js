@@ -15,18 +15,27 @@
 
 /* Wrap code in self-calling function to keep global scope clean*/
 (function(){
+	var storageIndex = 0;
 	var input = document.getElementById('userInput');
 	var output = document.getElementById('output');
 
 	var enterBtn = document.getElementById('write');
 	var readBtn = document.getElementById('read');
 	var resetBtn = document.getElementById('reset');
+	
+	/*
+	* Check for addEventListener support
+	* pollyfilled browers will pass this test
+	*/
+	if(Element.prototype.addEventListener){
+		attachEvents();
+	}
 
-	var storageIndex = 0;
-
-	enterBtn.addEventListener('click', storeTextHandler);
-	readBtn.addEventListener('click', readDBHandler);
-	resetBtn.addEventListener('click', resetDBHandler);
+	function attachEvents(){
+		enterBtn.addEventListener('click', storeTextHandler);
+		readBtn.addEventListener('click', readDBHandler);
+		resetBtn.addEventListener('click', resetDBHandler);
+	}
 
 	function storeTextHandler(event){
 		event.preventDefault(); // we shouldn't need this, but just to be safe
