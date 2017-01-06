@@ -7,7 +7,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
-        <!-- Pollyfill addEventListener on IE8 -->
+        <!--
+            Pollyfill addEventListener on IE8
+
+            Based on MDN's documentation, we know localStoarge is supportd in IE8, but addEventListener is not, therefore we're going to pollyfill addEventListener to make this example work on all major browsers that support localStorage
+
+            localStorage
+            https://developer.mozilla.org/en/docs/Web/API/Window/localStorage#Browser_compatibility
+
+            addEventListener
+            https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Browser_compatibility
+         -->
         <!--[if IE 8]><script src="js/vendor/pollyfills/EventListener.js"></script><!--<![endif]-->
         <!-- modernizr for feature detection -->
         <script type="text/javascript" src="js/vendor/modernizr.min.js"></script>

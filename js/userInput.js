@@ -6,13 +6,6 @@
 * website: {portfolio}
 */
 
-/*
-* TASK 1: Add user input to local storage
-*
-* localStorage
-* https://developer.mozilla.org/en/docs/Web/API/Window/localStorage
-*/
-
 /* Wrap code in self-calling function to keep global scope clean*/
 (function(){
 	var storageIndex = 0;
