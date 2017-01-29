@@ -3,28 +3,35 @@
 * check js/vendor/modernizr.min.js for a URL to the build
 */
 
-.local_storage_example textarea{
-	width: 100%;
+.local_storage_example textarea {
+  width: 100%;
 }
 
+
 /*
-* Scripts are running, hide the no script section 
+* Scripts are running, hide the no script section
 */
-.js .local_storage_example__no-js{
-	display: none;	
+
+.js .local_storage_example__no-js {
+  display: none;
 }
+
 
 /*
 * localStorage dectected, hide the no support section
 */
-.localstorage .local_storage_example__no_support{
-	display: none;
+
+.localstorage .local_storage_example__no_support {
+  display: none;
 }
+
+
 /*
 * Hide the feature when JS is disabled,
 * or localStorage is not supported
 */
+
 .no-js .local_storage_example,
-.no-localstorage .local_storage_example{
-	display: none;
+.no-localstorage .local_storage_example {
+  display: none;
 }

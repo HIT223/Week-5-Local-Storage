@@ -1,39 +1,36 @@
-*, *::before, *::after{
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body{
-	background-color: #0D47A1;
+body {
+  background-color: #0D47A1;
 }
 
-img{
-	max-width: 100%;
-	height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.container{
-	margin-top: 50px;
-	position: relative;
-	padding-left: 0;
-	padding-right: 0;
+.container {
+  margin-top: 50px;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.container > *{
-	padding-left: 14px;
-	padding-right: 14px;
+.container>* {
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
-.row{
-	padding-bottom: 20px;
+.row {
+  padding-bottom: 20px;
 }
 
-footer{
-	background-color: #BBDEFB;
-	overflow: hidden;
-	/*position: absolute;*/
-	/*bottom: 0;*/
-	/*left: 0;*/
-	/*width: 100%;*/
-
-	font-weight: bold;
+footer {
+  background-color: #BBDEFB;
+  overflow: hidden;
+  font-weight: bold;
 }
